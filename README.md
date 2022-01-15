@@ -13,7 +13,7 @@
     BASTE Music website
     <br />
     <br />
-    <a href="https://www.baste-music.nl">View Site</a>
+    <a href="https://www.bastemusic.nl">View Site</a>
     ·
     <a href="https://github.com/ruudvh/bastemusic/issues">Report Bug</a>
   </p>
