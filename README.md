@@ -28,6 +28,6 @@ BASTE Music website
 * Glitch effect by: [noriel](https://codepen.io/toperrr/pen/KKqMRjw?editors=1100)
 
 ## License
-Distributed under the MIT License. See `LICENSE.txt` for more information.
+The "BASTE music" logo is reserved, and copyright is retained by the original owner. You cannot modify or redistribute the logo without explicit permission from the copyright holder. All code distributed under the MIT License. See `LICENSE.txt` for more information.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
