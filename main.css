@@ -53,7 +53,7 @@ h1 {
 }
 
 .section.sec_2 {
-	background: linear-gradient(rgba(10, 10, 10, 0.6), rgba(0, 0, 0, 0.9)), repeating-linear-gradient( 0, transparent, transparent 2px, black 3px, black 3px), url(https://media.giphy.com/media/26xBHklzttKHVB7bO/giphy.gif);
+	background: linear-gradient(rgba(10, 10, 10, 0.6), rgba(0, 0, 0, 0.9)), repeating-linear-gradient( 0, transparent, transparent 2px, black 3px, black 3px), url(https://media.giphy.com/media/3o8dpbfzkgiDrCwbxm/giphy.gif);
 	background-size: cover;
 	background-position: center;
 }
@@ -71,7 +71,7 @@ h1 {
 }
 
 .section.sec_5 {
-	background: linear-gradient(rgba(10, 10, 10, 0.6), rgba(0, 0, 0, 0.9)), repeating-linear-gradient( 0, transparent, transparent 2px, black 3px, black 3px), url(https://media.giphy.com/media/TNqMlgTuv5jJ6/giphy.gif);
+	background: linear-gradient(rgba(10, 10, 10, 0.6), rgba(0, 0, 0, 0.9)), repeating-linear-gradient( 0, transparent, transparent 2px, black 3px, black 3px), url(https://media.giphy.com/media/N2ng0M6HzgKr3lW8df/giphy.gif);
 	background-size: cover;
 	background-position: center;
 }
