@@ -1,561 +1,514 @@
-* {
-	box-sizing: border-box;
-}
+@charset "UTF-8";
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 html,
 body,
+div,
+span,
+applet,
+object,
+iframe,
 h1,
-h2 {
-	padding: 0;
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
 	margin: 0;
-	font-family: "Helvetica Neue", sans-serif;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline
 }
 
-h1, h2{
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block
+}
+
+body {
+	line-height: 1
+}
+
+ol,
+ul {
+	list-style: none
+}
+
+blockquote,
+q {
+	quotes: none
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0
+}
+
+/* body */
+body {
 	color: white;
-	font-size: 4em;
-	letter-spacing: 0.5em;
-}
-h1 {
-	font-family: "Anurati", sans-serif;
-}
-
-@media screen and (max-width: 500px) {
-  h1, h2 {
-    font-size: 3em;
-  }
-}
-
-.content-wrapper {
-	width: 100vw;
-	height: 100vh;
-	overflow-x: hidden;
-}
-
-.section {
-	background: #0a0a0a;
-	min-height: 100%;
-	width: 100%;
-	margin: 0;
-	padding: 0;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-evenly;
-	align-items: center;
-	position: relative;
-	z-index: 1;
-}
-
-.section.sec_1 {
-	background: linear-gradient(rgba(10, 10, 10, 0.6), rgba(0, 0, 0, 0.9)), repeating-linear-gradient( 0, transparent, transparent 2px, black 3px, black 3px), url(https://media.giphy.com/media/l3q2Nz5AJ5BI7uxjy/giphy.gif);
-	background-size: cover;
-	background-position: center;
-}
-
-.section.sec_2 {
-	background: linear-gradient(rgba(10, 10, 10, 0.6), rgba(0, 0, 0, 0.9)), repeating-linear-gradient( 0, transparent, transparent 2px, black 3px, black 3px), url(https://media.giphy.com/media/3o8dpbfzkgiDrCwbxm/giphy.gif);
-	background-size: cover;
-	background-position: center;
-}
-
-.section.sec_3 {
-	background: linear-gradient(rgba(10, 10, 10, 0.6), rgba(0, 0, 0, 0.9)), repeating-linear-gradient( 0, transparent, transparent 2px, black 3px, black 3px), url(https://media.giphy.com/media/mACq9GTltV8nC/giphy.gif);
-	background-size: cover;
-	background-position: center;
-}
-
-.section.sec_4 {
-	background: linear-gradient(rgba(10, 10, 10, 0.6), rgba(0, 0, 0, 0.9)), repeating-linear-gradient( 0, transparent, transparent 2px, black 3px, black 3px), url(https://media.giphy.com/media/3oFzm7izbtKqWNotck/giphy.gif);
-	background-size: cover;
-	background-position: center;
-}
-
-.section.sec_5 {
-	background: linear-gradient(rgba(10, 10, 10, 0.6), rgba(0, 0, 0, 0.9)), repeating-linear-gradient( 0, transparent, transparent 2px, black 3px, black 3px), url(https://media.giphy.com/media/N2ng0M6HzgKr3lW8df/giphy.gif);
-	background-size: cover;
-	background-position: center;
-}
-
-.wrapper {
-	text-align: center;
-	width: 90%;	
-}
-
-.submsg {
-	color: #64dcdc;
-	letter-spacing: 1em;
-	font-family: "quicksand", sans-serif;
-}
-
-.btn-outline {
-	border: solid 1px #fff;
-	color: #fff;
-	background: 0 0;
-	transition: all 0.3s ease-in-out;
-}
-
-.btn-outline:hover,
-.btn-outline:focus,
-.btn-outline:active,
-.btn-outline.active {
-	border: solid 1px #fff;
-	color: #000;
-	background: #fff;
-}
-
-.listen-now {
-	height: 10vh;
-	text-align: center;
-	z-index: 1;
-}
-
-.listen-now-link {
-	padding: 10px;
-	border: 1px solid white;
-	color: #fff;
-	text-decoration: none;
-}
-
-
-/* ************************
-** Cards
-***************************/
-.cards {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-evenly;
-	align-items: center;
-	flex-wrap: wrap;
-}
-
-.cards .card {
 	overflow: hidden;
-	width: 25vh;
-	height: 35vh;
-	background: #fff;
-	box-shadow: 1px 22px 44px rgba(0, 0, 0, 0.19);
-	transition: 0.6s;
-	border-radius: 2px;
+	background: #ef8b80;
+	font-family: "proxima-nova", "Lato", "Source Sans Pro", "Raleway", Arial, sans-serif;
+	-webkit-transition: background 0.5s ease;
+	-moz-transition: background 0.5s ease;
+	-ms-transition: background 0.5s ease;
+	-o-transition: background 0.5s ease;
+	transition: background 0.5s ease;
+	margin: 0;
+}
+
+/* Outline none */
+*,
+*:focus,
+*:active {
+	outline: none;
+}
+
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.svg path {
+	fill: white;
+}
+
+h3 {
+	cursor: default;
+	font-weight: 600;
+	font-size: 12px;
+	letter-spacing: 1px;
+	margin: 0 0 15px;
+	text-transform: uppercase;
+}
+
+p {
+	cursor: default;
+}
+
+p.info-text {
+	color: #b3b3b3;
+	font-size: 10px;
+}
+
+.fa.add {
 	position: relative;
-	display: flex;
-	margin: 15px;
 }
 
-.cards .card:hover {
-	transform: translateY(-15px);
-	box-shadow: 1px 12px 34px rgba(0, 0, 0, 0.31);
-}
-
-.cards .card:hover .read-more {
-	opacity: 1;
-	transition-delay: 0.4s;
-}
-
-.cards .card:hover .read-more .view {
-	opacity: 1;
-	transform: translateY(0%);
-	transition: 0.6s;
-	transition-delay: 1s;
-}
-
-.cards .card:hover .content {
-	transform: translateY(100%);
-	opacity: 0;
-}
-
-.cards .card .content {
-	transition: 0.8s;
-	display: flex;
-	flex-wrap: wrap;
-	align-self: flex-end;
-	padding: 25px 25px 50px 25px;
-	background: rgba(0, 0, 0, 0.78);
-}
-
-.cards .card .content .title {
-	width: 100%;
-	color: #fff;
-	font-size: 44px;
-	font-weight: 700;
-	line-height: 50px;
-	margin-bottom: 12px;
-}
-
-.cards .card .content .text {
-	width: 100%;
-	color: #fff;
-	font-size: 16px;
-	font-weight: 300;
-}
-
-.cards .card .read-more {
-	width: 100%;
-	height: 100%;
+.fa.add::after {
+	background: #444444;
+	border-radius: 100px;
+	content: "";
+	font-size: 10px;
+	left: 2px;
 	position: absolute;
-	background: rgba(0, 0, 0, 0.78);
-	color: #fff;
-	font-weight: 300;
-	opacity: 0;
-	transition: 0.8s;
-	top: 0;
-	left: 0;
-	text-align: center;
+	top: -1px;
+	width: 10px;
+	height: 11px;
+}
+
+#wrapper {
+	height: 100vh;
+	width: 100vw;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	overflow: hidden;
 }
 
-.cards .card_1 {
-	background: url("https://i1.sndcdn.com/artworks-tyhI4aRPqtaCHyuh-18mkLA-t500x500.jpg") no-repeat center/cover;
+.logo {
+	position: absolute;
+	top: 0;
+	width: 300px;
 }
 
-.cards .card_2 {
-	background: url("https://i1.sndcdn.com/artworks-ysBtZgHNvsZRywiw-zsJsOg-t500x500.jpg") no-repeat center/cover;
+#content-wrap {
+	width: 225px;
+	position: relative;
+	z-index: 5;
 }
 
-.cards .card_3 {
-	background: url("https://i1.sndcdn.com/artworks-NUMPLxZGDexYUkcX-t78DFQ-t500x500.jpg") no-repeat center/cover;
-}
-
-.cards .card_4 {
-	background: url("https://i1.sndcdn.com/artworks-jh7qIx0b1tF1GxPr-jJGRyw-t500x500.jpg") no-repeat center/cover;
-}
-
-
-/* ************************
-** Scroll Down
-**************************/
-.scroll-down {
-	height: 10vh;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	position: fixed;
-	text-align: center;
+#background {
+	overflow: hidden;
+	height: 100%;
+	width: 100%;
+	position: absolute;
 	z-index: 1;
+	display: block;
+	opacity: 0.5;
+	-webkit-transform: scale(1.10);
+	-moz-transform: scale(1.10);
+	-ms-transform: scale(1.10);
+	-o-transform: scale(1.10);
+	transform: scale(1.10);
+	-webkit-filter: blur(25px);
+	-moz-filter: blur(25px);
+	-ms-filter: blur(25px);
+	-o-filter: blur(25px);
+	filter: blur(25px);
+	-webkit-transition: background-image 0.25s ease;
+	-moz-transition: background-image 0.25s ease;
+	-ms-transition: background-image 0.25s ease;
+	-o-transition: background-image 0.25s ease;
+	transition: background-image 0.25s ease;
+	background-image: url("static/BASTE_logo_500x500.jpg");
+	background-size: cover;
 }
 
-.scroll-down-text {
-	color: #d8d8d8;
-	font-weight: bold;
-}
-
-.scroll-down-bar {
-	animation: scrollanim 4s infinite;
-	background: #d8d8d8;
-	display: inline-block;
-	height: 20px;
-	margin: 10px auto;
-	width: 1px;
-}
-
-@keyframes scrollanim {
-	0% {
-		transform: scale(1, 0);
-		transform-origin: 0% 0%;
-	}
-	50% {
-		transform: scale(1, 1);
-		transform-origin: 0% 100%;
-	}
-	100% {
-		transform: scale(1, 0);
-		transform-origin: 0% 0%;
-	}
-}
-
-
-/* ************************
-** Social Links
-**************************/
-.btn-social {
-	display: inline-block;
-	width: 48px;
-	height: 48px;
+#song {
 	text-align: center;
-	font-size: 24px;
-	line-height: 55px;
-	margin-left: 10px;
+	width: calc(225px - 30px);
+	margin: 0 auto;
+}
+
+#song .album,
+#song .vinyl {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+#song .album img {
+	width: 92.5%;
+}
+
+#song .album {
+	-webkit-box-shadow: 0px 5px 25px rgba(50, 50, 50, 0.5);
+	-moz-box-shadow: 0px 5px 25px rgba(50, 50, 50, 0.5);
+	box-shadow: 0px 5px 25px rgba(50, 50, 50, 0.5);
+}
+
+#song .album-sleeve {
+	position: absolute;
+	z-index: 5;
+	-moz-transform: scale(1.05);
+	-o-transform: scale(1.05);
+	-ms-transform: scale(1.05);
+	-webkit-transform: scale(1.05);
+	transform: scale(1.05);
+}
+
+#song .vinyl {
+	position: absolute;
+	z-index: -5;
+	left: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	-moz-transform: scale(0.95);
+	-o-transform: scale(0.95);
+	-ms-transform: scale(0.95);
+	-webkit-transform: scale(0.95);
+	transform: scale(0.95);
+	-webkit-transition: left 0.5s ease;
+	-moz-transition: left 0.5s ease;
+	-ms-transition: left 0.5s ease;
+	-o-transition: left 0.5s ease;
+	transition: left 0.5s ease;
+}
+#song .vinyl.paused{
+	left:0%;
+}
+
+#song .vinyl-cover {
+	opacity: 0.9;
+	position: absolute;
+	z-index: 5;
+	margin-top: -2px;
+	border-radius: 50%;
+	box-shadow: 0 0px 2px rgba(0, 0, 0, 0.4), inset 0 0px 1px rgba(0, 0, 0, 0.3),
+		0 1px 2px rgba(0, 0, 0, 0.6), 0 4px 2px rgba(0, 0, 0, 0.2),
+		0 9px 4px rgba(0, 0, 0, 0.1), inset 0 2px 1px rgba(255, 255, 255, 0.6);
+}
+
+#song img.vinyl-cover {
+	width: 29%;
+}
+
+#song p {
+	color: white;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+}
+
+#song p.title {
+	font-size: 16px;
+	font-weight: 600;
+	margin: 10px 0 5px;
+}
+
+#song p.artist {
+	font-size: 12px;
+	margin: 0;
+}
+
+#audio-player {
+	margin: 25px auto 15px;
+}
+
+#controls {
+	color: white;
+	display: table;
+	margin: 10px auto 15px;
+	text-align: center;
+	width: 75%;
+}
+
+#controls span {
+	display: table-cell;
+	font-size: 20px;
 	vertical-align: middle;
 }
 
-.btn-social svg {
-	width: 24px;
-	fill: #fff;
+#controls span#play-btn {
+	font-size: 34px;
 }
 
-.btn-social:hover svg {
-	fill: #000;
+#controls span i {
+	cursor: pointer;
 }
 
-/* *****************
-** Glitch
-** https://codepen.io/toperrr/pen/KKqMRjw?editors=1100
-********************/
-.submsg,
-.glitch {
-	-webkit-touch-callout: none;
+#sub-controls {
+	cursor: default;
+	font-size: 14px;
+	margin: 15px 0 0;
+	text-align: center;
 	-webkit-user-select: none;
-	-khtml-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
 }
 
-
-/* Our mixin positions a copy of our text
-directly on our existing text, while
-also setting content to the appropriate
-text set in the data-text attribute. */
-
-.glitch {
+#sub-controls .svg {
+	height: 14px;
 	position: relative;
-	/* Animation provies a slight random skew. Check bottom of doc
-  for more information on how to random skew. */
-	animation: glitch-skew 1s infinite linear alternate-reverse;
+	top: 2px;
+	width: 14px;
 }
 
-.glitch::before {
-	content: attr(data-text);
+#sub-controls .svg path {
+	fill: #999999;
+}
+
+#sub-controls i,
+#sub-controls .svg {
+	cursor: pointer;
+	margin: 0 15px;
+}
+
+#sub-controls i.active,
+#sub-controls .svg.active {
+	color: #e74c3c;
+}
+
+#timeline {
+	position: relative;
+	margin: 0 auto;
+	width: 92.5%;
+}
+
+#timeline span {
+	font-size: 12px;
 	position: absolute;
-	top: 0;
+	top: -15px;
+}
+
+#timeline span#current-time {
 	left: 0;
-	width: 100%;
-	height: 100%;
-	left: 2px;
-	text-shadow: -2px 0 #ff00c1;
-	/* Creates an initial clip for our glitch. This works in
-  a typical top,right,bottom,left fashion and creates a mask
-  to only show a certain part of the glitch at a time. */
-	clip: rect(44px, 450px, 56px, 0);
-	/* Runs our glitch-anim defined below to run in a 5s loop, infinitely,
-  with an alternating animation to keep things fresh. */
-	animation: glitch-anim 5s infinite linear alternate-reverse;
 }
 
-.glitch::after {
-	content: attr(data-text);
+#timeline span#total-time {
+	right: 0;
+}
+
+#timeline .slider {
+	background-color: #fff;
+	border-radius: 2px;
+	cursor: pointer;
+	height: 2px;
+	position: relative;
+	width: 100%;
+}
+
+#timeline .slider .progress {
+	background-color: #e74c3c;
+	height: 100%;
+	pointer-events: none;
 	position: absolute;
-	top: 0;
-	left: -2px;
-	width: 100%;
-	height: 100%;
-	text-shadow: -2px 0 #00fff9, 2px 2px #ff00c1;
-	animation: glitch-anim2 1s infinite linear alternate-reverse;
+	width: 0;
 }
 
+#timeline .slider .progress .pin {
+	background-color: white;
+	border-radius: 8px;
+	height: 8px;
+	position: absolute;
+	pointer-events: all;
+	right: -5px;
+	top: -3px;
+	width: 8px;
+	-webkit-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.32);
+	-moz-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.32);
+	box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.32);
+	-webkit-transition: transform 0.25s ease;
+	-moz-transition: transform 0.25s ease;
+	-ms-transition: transform 0.25s ease;
+	-o-transition: transform 0.25s ease;
+	transition: transform 0.25s ease;
+}
 
-/* Creates an animation with 20 steaps. For each step, it calculates 
-a percentage for the specific step. It then generates a random clip
-box to be used for the random glitch effect. Also adds a very subtle
-skew to change the 'thickness' of the glitch.*/
+#timeline .slider .progress .pin:active {
+	-moz-transform: scale(1.5);
+	-o-transform: scale(1.5);
+	-ms-transform: scale(1.5);
+	-webkit-transform: scale(1.5);
+	transform: scale(1.5);
+}
 
-@keyframes glitch-anim {
-	0% {
-		clip: rect(14px, 9999px, 50px, 0);
-		transform: skew(0.71deg);
+.socials {
+	margin: 35px auto 15px;
+	text-align: center;
+}
+
+.btn-social {
+	display: inline-block;
+	color: #fff;
+	width: 24px;
+	height: 24px;
+	text-align: center;
+	font-size: 24px;
+	line-height: 55px;
+	margin: 0 5px 5px 0;
+	vertical-align: middle;
+}
+
+.btn-social svg {
+	fill: #fff;
+	width: 24px;
+}
+
+/**************/
+/* Animations */
+/**************/
+.rotate {
+	animation: rotation 8s infinite linear;
+	animation-fill-mode: forwards;
+}
+
+.paused {
+	animation-play-state: paused;
+}
+
+@keyframes rotation {
+	from {
+		transform: rotate(0deg);
 	}
-	5% {
-		clip: rect(34px, 9999px, 73px, 0);
-		transform: skew(0.21deg);
-	}
-	10% {
-		clip: rect(34px, 9999px, 82px, 0);
-		transform: skew(0.9deg);
-	}
-	15% {
-		clip: rect(3px, 9999px, 74px, 0);
-		transform: skew(0.41deg);
-	}
-	20% {
-		clip: rect(100px, 9999px, 54px, 0);
-		transform: skew(0.52deg);
-	}
-	25% {
-		clip: rect(74px, 9999px, 67px, 0);
-		transform: skew(0.52deg);
-	}
-	30% {
-		clip: rect(92px, 9999px, 75px, 0);
-		transform: skew(0.58deg);
-	}
-	35% {
-		clip: rect(5px, 9999px, 67px, 0);
-		transform: skew(0.72deg);
-	}
-	40% {
-		clip: rect(85px, 9999px, 14px, 0);
-		transform: skew(0.73deg);
-	}
-	45% {
-		clip: rect(60px, 9999px, 18px, 0);
-		transform: skew(0.11deg);
-	}
-	50% {
-		clip: rect(5px, 9999px, 28px, 0);
-		transform: skew(0.93deg);
-	}
-	55% {
-		clip: rect(74px, 9999px, 95px, 0);
-		transform: skew(0.82deg);
-	}
-	60% {
-		clip: rect(55px, 9999px, 6px, 0);
-		transform: skew(0.52deg);
-	}
-	65% {
-		clip: rect(92px, 9999px, 51px, 0);
-		transform: skew(0.83deg);
-	}
-	70% {
-		clip: rect(6px, 9999px, 10px, 0);
-		transform: skew(0.76deg);
-	}
-	75% {
-		clip: rect(76px, 9999px, 95px, 0);
-		transform: skew(0.39deg);
-	}
-	80% {
-		clip: rect(14px, 9999px, 41px, 0);
-		transform: skew(0.43deg);
-	}
-	85% {
-		clip: rect(43px, 9999px, 56px, 0);
-		transform: skew(0.65deg);
-	}
-	90% {
-		clip: rect(50px, 9999px, 12px, 0);
-		transform: skew(0.22deg);
-	}
-	95% {
-		clip: rect(86px, 9999px, 45px, 0);
-		transform: skew(0.98deg);
-	}
-	100% {
-		clip: rect(72px, 9999px, 100px, 0);
-		transform: skew(0.03deg);
+
+	to {
+		transform: rotate(359deg);
 	}
 }
 
-@keyframes glitch-anim2 {
-	0% {
-		clip: rect(61px, 9999px, 51px, 0);
-		transform: skew(0.01deg);
+/**************/
+/* Media calls */
+/**************/
+@media (max-width: 375px) {
+	.logo {
+		top: -75px;
 	}
-	5% {
-		clip: rect(65px, 9999px, 93px, 0);
-		transform: skew(0.09deg);
-	}
-	10% {
-		clip: rect(7px, 9999px, 90px, 0);
-		transform: skew(0.88deg);
-	}
-	15% {
-		clip: rect(49px, 9999px, 68px, 0);
-		transform: skew(0.82deg);
-	}
-	20% {
-		clip: rect(56px, 9999px, 9px, 0);
-		transform: skew(0.46deg);
-	}
-	25% {
-		clip: rect(10px, 9999px, 93px, 0);
-		transform: skew(0.15deg);
-	}
-	30% {
-		clip: rect(57px, 9999px, 36px, 0);
-		transform: skew(0.84deg);
-	}
-	35% {
-		clip: rect(83px, 9999px, 27px, 0);
-		transform: skew(0.3deg);
-	}
-	40% {
-		clip: rect(77px, 9999px, 35px, 0);
-		transform: skew(0.81deg);
-	}
-	45% {
-		clip: rect(50px, 9999px, 81px, 0);
-		transform: skew(0.72deg);
-	}
-	50% {
-		clip: rect(97px, 9999px, 4px, 0);
-		transform: skew(0.86deg);
-	}
-	55% {
-		clip: rect(34px, 9999px, 18px, 0);
-		transform: skew(0.9deg);
-	}
-	60% {
-		clip: rect(40px, 9999px, 60px, 0);
-		transform: skew(0.41deg);
-	}
-	65% {
-		clip: rect(25px, 9999px, 19px, 0);
-		transform: skew(0.31deg);
-	}
-	70% {
-		clip: rect(68px, 9999px, 61px, 0);
-		transform: skew(0.74deg);
-	}
-	75% {
-		clip: rect(33px, 9999px, 5px, 0);
-		transform: skew(0.2deg);
-	}
-	80% {
-		clip: rect(70px, 9999px, 45px, 0);
-		transform: skew(0.6deg);
-	}
-	85% {
-		clip: rect(50px, 9999px, 13px, 0);
-		transform: skew(0.69deg);
-	}
-	90% {
-		clip: rect(24px, 9999px, 55px, 0);
-		transform: skew(0.6deg);
-	}
-	95% {
-		clip: rect(25px, 9999px, 83px, 0);
-		transform: skew(0.26deg);
-	}
-	100% {
-		clip: rect(44px, 9999px, 67px, 0);
-		transform: skew(0.91deg);
-	}
-}
 
-@keyframes glitch-skew {
-	0% {
-		transform: skew(-1deg);
-	}
-	10% {
-		transform: skew(-2deg);
-	}
-	20% {
-		transform: skew(1deg);
-	}
-	30% {
-		transform: skew(3deg);
-	}
-	40% {
-		transform: skew(-2deg);
-	}
-	50% {
-		transform: skew(-1deg);
-	}
-	60% {
-		transform: skew(0deg);
-	}
-	70% {
-		transform: skew(-3deg);
-	}
-	80% {
-		transform: skew(2deg);
-	}
-	90% {
-		transform: skew(3deg);
-	}
-	100% {
-		transform: skew(2deg);
+	#song .vinyl {
+		left: 40%;
 	}
 }
