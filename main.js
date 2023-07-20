@@ -1,42 +1,42 @@
 var songs = [
 	{
 		title: "Transition",
-		artist: "BaSte",
+		artist: "BASTE",
 		cover_url: "static/covers/transition.jpg",
 		audio_url: "static/audio/BASTE - Transition.mp3",
 		color: "#c3af50"
 	},
 	{
 		title: "The New World",
-		artist: "BaSte",
+		artist: "BASTE",
 		cover_url: "static/covers/the-new-world.jpg",
 		audio_url: "static/audio/BASTE - The new world.mp3",
 		color: "#25323b"
 	},
 	{
 		title: "Flower Girl",
-		artist: "Ruben Young x BaSte",
+		artist: "Ruben Young x BASTE",
 		cover_url: "static/covers/flower-girl.jpg",
 		audio_url: "static/audio/Ruben Young - Flower Girl (BASTE Remix).mp3",
 		color: "#c1c1c1"
 	},
 	{
 		title: "Orange Heart",
-		artist: "Headhunterz x BaSte",
+		artist: "Headhunterz x BASTE",
 		cover_url: "static/covers/orange-heart.jpg",
 		audio_url: "static/audio/Headhunterz - Orange Heart (BASTE edit).mp3",
 		color: "rgb(80, 125, 195)"
 	},
 	{
 		title: "Reason Why",
-		artist: "BaSte",
+		artist: "BASTE",
 		cover_url: "static/covers/reason-why.jpg",
 		audio_url: "static/audio/BASTE - Reason why (extended mix).mp3",
 		color: "#5d0126"
 	},
 	{
 		title: "Defining Mysterie",
-		artist: "BaSte",
+		artist: "BASTE",
 		cover_url: "static/covers/defining-mysterie.jpg",
 		audio_url: "static/audio/BASTE - Defining Mysterie.mp3",
 		color: "rgb(1, 20, 93)"

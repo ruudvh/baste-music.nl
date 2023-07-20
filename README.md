@@ -10,7 +10,7 @@
 <h3 align="center">BASTE Music</h3>
 
   <p align="center">
-    BASTE Music website
+    BASTE Music Website
     <br />
     <br />
     <a href="https://www.bastemusic.nl">View Site</a>
@@ -21,7 +21,7 @@
 
 
 ## About The Project
-BASTE Music website
+BASTE Music Website
 
 ## Built With
 * Plain HTML / CSS / JS
@@ -29,6 +29,6 @@ BASTE Music website
 * Music Player by [Greg Hovanesyan](https://codepen.io/gregh/pen/NdVvbm)
 
 ## License
-The "BASTE music" logo, audio, and cover images are reserved, and copyright is retained by the original owner. You cannot modify or redistribute these files without explicit permission from the copyright holder. All code distributed under the MIT License. See `LICENSE.txt` for more information.
+The "BASTE Music" logo, audio, and cover images are reserved, and copyright is retained by the original owner. You cannot modify or redistribute these files without explicit permission from the copyright holder. All code distributed under the MIT License. See `LICENSE.txt` for more information.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
